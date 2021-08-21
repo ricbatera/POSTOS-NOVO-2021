@@ -1,4 +1,7 @@
 /* configurações gerais e reset de CSS */
+html, body{
+    height: 100vh;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     color: #222;
@@ -19,4 +22,90 @@ img{
 }
 *{
     box-sizing: border-box;
+}
+
+/* CONTAINER */
+.container{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/bg.jpg');
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+}
+
+/* CONTAINER APP - TELA DO APP */
+
+.container-app{
+    height: 600px;
+    width: 370px;
+    background-color: rgba(255, 255, 255, .9);
+    padding: 0 10px;
+}
+
+/* HEADER DA PAGINA  */
+
+.container-app h1{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container-app p{
+    text-align: center;
+}
+.container-app span{
+    color: red;
+    font-weight: bold;
+}
+
+/* CORPO DO APP */
+.corpo{
+    display: flex;
+}
+
+.lado-a a{
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 95%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.lado-a a>i{
+    margin-left: 10px;
+}
+
+.lado-a a:nth-child(1){
+    margin-top: 50px;
+    background-color: #518ec9;
+}
+.lado-a a:nth-child(2){
+    background-color: #efa923;
+    margin-bottom: 20px;
+}
+
+.lado-a p{
+    font-size: 1.3em;
+    color: #d72657;
+    font-weight: bold;
+}
+
+.lado-b{
+    display: flex;
+    align-items: flex-end;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 40px;
+}
+.footer p:nth-child(2){
+    color: #4950a2;
+    font-weight: bold;
 }
