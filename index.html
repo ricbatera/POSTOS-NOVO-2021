@@ -37,6 +37,19 @@
         </div>
     </div>
 
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="conteudo-modal" id="conteudo-modal">
+            <h3>Aguarde</h3>
+            <img src="./img/cloud_load.gif" alt="carregando">
+            <p id="status">Buscando dados no servidor...</p>
+            <div class="esconde" id="concluido">
+                <p class="postos-encontrados">Foram encontrados <span id="qtde-postos"></span> postos</p>
+                <button type="button" class="btn" id="btn" onclick="btnFechar()">Fechar <span id="tempo">5</span></button>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/script.js"></script>
 </body>
 
