@@ -42,6 +42,8 @@ img{
     width: 370px;
     background-color: rgba(255, 255, 255, .9);
     padding: 0 10px;
+    overflow: auto;
+    border-radius: 10px;
 }
 
 /* HEADER DA PAGINA  */
@@ -151,4 +153,39 @@ img{
 
 .esconde{
     display: none;
+}
+
+/* TELA LISTA */
+
+.campo-pesquisa{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.cartao-lista{
+    border-bottom: 2px solid #518ec9;
+    margin-bottom: 30px;
+}
+
+.cartao-lista p:nth-child(1){
+    font-weight: 900;
+    color: #4950a2;
+    font-size: 1.1em;
+}
+.cartao-lista p:nth-child(5){
+    font-weight: 900;
+    color: #d72657;
+    font-size: 1.3em;
+    padding: 10px;
+    border: 2px solid #d72657;
+    border-radius: 20px;
+    width: 80%;
+    margin: 10px auto 30px auto;
+    cursor: pointer;
+}
+
+.resultado{
+    overflow: auto;
 }
